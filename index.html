@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#1fb6ff',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="booking__card w-full max-w-80 rounded-3xl">
+            <img src="https://images.pexels.com/photos/62623/wing-plane-flying-airplane-62623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="booking__card--image" alt="flight">
+            <div class="booking__info bg-white p-8">
+                <div class="booking__info--top w-full flex items-center justify-between">
+                    <h3 class="booking__title text-zinc-500">Flight Ticket</h3>
+                    <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">View details</button>
+                </div>
+                <div class="booking__info--middle">
+                    <p class="booking__price font-bold ">$250.00</p>
+                    <div class="booking__card--divider h-px bg-gray-300 my-6"></div>
+                    <p class="booking__description pb-6">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores mollitia repudiandae facere consectetur voluptas dolor vero rerum voluptatem inventore.
+                    </p>
+                    <p class="booking__promotion text-gray-500 text-sm">
+                        Available Position - 18h left
+                    </p>
+                </div>
+                <div class="booking__info--bottom pt-6 ">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Purchase</button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
