@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
+    container: {
+      center: true,
+    },
     colors: {
       'blue': '#4793AF',
       'orange': '#FFC470',
